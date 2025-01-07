@@ -10,7 +10,7 @@ import os
 
 import warnings
 warnings.filterwarnings('ignore')
-dataset  = pd.read_csv(r'C:\\Users\\melda\\Desktop\\HeartDisease\\Dataset\\heart.csv')
+dataset  = pd.read_csv(r'C:\\Users\\melda\\Documents\\GitHub\\HeartAttackML\\HeartDisease\Dataset\\normalized_veriset2.csv')
 type(dataset)
 dataset.shape
 from sklearn.model_selection import train_test_split

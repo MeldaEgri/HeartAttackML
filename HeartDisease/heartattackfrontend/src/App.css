@@ -1,38 +1,90 @@
-.App {
+.heart-disease-form {
+  position: relative;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  max-width: 1200px; /* Daha geniş alan */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; /* Arada boşluk */
+}
+
+.field-descriptions {
+  flex: 1;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.field-descriptions p {
+  margin: 5px 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.description {
+  white-space: pre-wrap;
 }
